@@ -1,0 +1,170 @@
+/* Estilos básicos */
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    background: #131120;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid blue;
+}
+
+header h1 {
+    border: 2px solid blue;
+    max-width: 90%;
+    padding: 15px 0;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 2px solid blue;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Seções */
+.caixa-1, .caixa-2 {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+}
+
+section {
+    border: 2px solid blue;
+    padding: 20px;
+    background: #131120;
+}
+
+.projetos {
+    border: 2px solid blue;
+}
+
+.foto-perfil {
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid blue;
+}
+
+/* Cards de Projetos */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background: #131120;
+    border: 2px solid blue;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 30%;
+    min-width: 250px;
+    box-shadow: 0 2px 5px #282842;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background: #371b70;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #35122e;
+    color: white;
+    border-top: 5px solid #6b256f;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .foto-perfil {
+        width: 80%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
